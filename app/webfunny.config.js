@@ -109,7 +109,10 @@ const otherConfig = {
     "need": true,
     "requireVerify": false
   },
-  "uploadServerErrorToWebfunny": true, // 是否上报错误日志至Webfunny服务（推荐开启，便于排查问题）
+  "uploadServerErrorToWebfunny": true,
+  "extraCors": {
+    "headers": ""
+  },
 }
 module.exports = {
   licenseConfig, domainConfig, mysqlConfig, otherConfig
